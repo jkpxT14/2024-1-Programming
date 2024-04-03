@@ -1,58 +1,10 @@
 #include <stdio.h>
 
-void P01()
-{
-    int a=10;
-    a=9;
-    a=8;
-    a=1;
-    printf("%d", a);
-
-    printf("\n");
-    return;
-}
-
-void P02()
-{
-    char c='b';
-    c='a';
-    c='t';
-    c='Q';
-    printf("%c", c);
-
-    printf("\n");
-    return;
-}
-
-void P03()
-{
-    int a=3;
-    int b=6;
-    int c=4;
-    a=b+c;
-    printf("%d", a);
-    
-    printf("\n");
-    return;
-}
-
-void P04()
-{
-    int a=10;
-    a=a+1; // a+=1;
-    a=a+4; // a+=4;
-    a=a+a; // a+=a; a*=2;
-    printf("%d", a);
-
-    printf("\n");
-    return;
-}
-
 void P1()
 {
     int a;
     a=1;
-    a=2;
+    a++;
     printf("%d", a);
 
     printf("\n");
@@ -62,7 +14,7 @@ void P1()
 void P2()
 {
     int a=5;
-    a=a+a; // a+=a; a*=2;
+    a=++a;
     printf("%d", a);
 
     printf("\n");
@@ -72,9 +24,9 @@ void P2()
 void P3()
 {
     int a, b;
-    a=10;
-    b=15;
-    printf("%d", a+b);
+    a=15;
+    b=10;
+    printf("%d", ++a + --b);
 
     printf("\n");
     return;
@@ -82,9 +34,9 @@ void P3()
 
 void P4()
 {
-    int a=5;
-    a=a*a;
-    printf("%d", a);
+    int a=10, n;
+    n=a++;
+    printf("%d", n);
 
     printf("\n");
     return;
@@ -92,11 +44,9 @@ void P4()
 
 void P5()
 {
-    int a, b;
-    a=1;
-    a=2;
-    b=10;
-    printf("%d", a+b);
+    int a=5;
+    a*=2;
+    printf("%d", a);
 
     printf("\n");
     return;
@@ -104,11 +54,9 @@ void P5()
 
 void P6()
 {
-    int a, b, sum=0;
-    a=3;
-    b=6;
-    sum=a+b;
-    printf("%d", sum);
+    int a=10;
+    a+=a;
+    printf("%d", a);
 
     printf("\n");
     return;
@@ -116,12 +64,9 @@ void P6()
 
 void P7()
 {
-    int a, b;
-    a=5;
-    b=10;
-    a=a+a;
-    b=a+b;
-    printf("%d %d", a, b);
+    int n=20;
+    n/=3;
+    printf("%d", n);
 
     printf("\n");
     return;
@@ -129,9 +74,9 @@ void P7()
 
 void P8()
 {
-    int a=1;
-    a=a+1;
-    printf("%d", a);
+    int a=15, b=25;
+    b-=a;
+    printf("%d", b);
 
     printf("\n");
     return;
@@ -139,11 +84,9 @@ void P8()
 
 void P9()
 {
-    int a=1, b=2, c=3;
-    a=b+c;
-    b=a+c;
-    c=a+b;
-    printf("%d %d %d", a, b, c);
+    int a=10;
+    printf("%d ", --a);
+    printf("%d", a);
 
     printf("\n");
     return;
@@ -151,9 +94,9 @@ void P9()
 
 void P10()
 {
-    int a=10;
-    printf("%d", a+a);
-    printf("%d", a/2);
+    int b=20;
+    printf("%d ", b++);
+    printf("%d", b--);
 
     printf("\n");
     return;
@@ -161,16 +104,9 @@ void P10()
 
 void P11()
 {
-    int a[5]={0, 1, 2, 3, 4};
-    printf("%d ", a[0]);
-    printf("%d ", a[1]);
-    printf("%d ", a[2]);
-    printf("%d ", a[3]);
-    printf("%d", a[4]);
-
-    // for(int i=0; i<5; i++){
-    //     printf("%d ", a[i]);
-    // }
+    int c=11;
+    printf("%d ", --c+2);
+    printf("%d", ++c);
 
     printf("\n");
     return;
@@ -178,18 +114,9 @@ void P11()
 
 void P12()
 {
-    int n=32;
-    n=n/2;
-    n=n/2;
-    n=n/2;
-    n=n/2;
-    n=n/2;
-    printf("%d", n);
-
-    // for(int i=0; i<5; i++){
-    //     n/=2;
-    // }
-    // printf("%d", n);
+    int d=15;
+    printf("%d ", d-5);
+    printf("%d", --d);
 
     printf("\n");
     return;
@@ -197,14 +124,11 @@ void P12()
 
 void P13()
 {
-    int a, b, c;
-    a=1;
-    b=3;
-    c=5;
-    a=a+a;
-    b=a+b;
-    c=b*c;
-    printf("%d %d %d", a, b, c);
+    int n=32;
+    n/=2;
+    n/=2;
+    n/=2;
+    printf("%d", n);
 
     printf("\n");
     return;
@@ -212,10 +136,11 @@ void P13()
 
 void P14()
 {
-    int i=1;
-    int a[2]={0, 0};
-    a[i]=i;
-    printf("%d %d", a[0], a[1]);
+    int n=15;
+    n+=10;
+    n-=5;
+    n*=2;
+    printf("%d", n);
 
     printf("\n");
     return;
@@ -223,10 +148,11 @@ void P14()
 
 void P15()
 {
-    int i=1;
-    int a[3]={5, 25, 50};
-    i=i*2;
-    printf("%d", a[i]*2);
+    int a=10, b=20, n;
+    n=a+b;
+    n-=a;
+    n+=b;
+    printf("%d", n);
 
     printf("\n");
     return;
@@ -234,17 +160,11 @@ void P15()
 
 void P16()
 {
-    int i=1;
-    int a[5]={10, 20, 30, 40, 50};
-
-    // int a[5];
-    // for(int i=1; i<=5; i++){
-    //     a[i]=10*i;
-    // }
-
-    printf("%d ", a[i]);
-    i=i*2;
-    printf("%d", a[i]);
+    int a=5, b=50, n;
+    n=b-a;
+    n-=++a;
+    n+=--b;
+    printf("%d", n);
 
     printf("\n");
     return;
@@ -252,16 +172,11 @@ void P16()
 
 void P17()
 {
-    int a=1;
-    printf("%d ", a);
-    a=a+2;
-    printf("%d ", a);
-    a=a+2;
-    printf("%d ", a);
-    a=a+2;
-    printf("%d ", a);
-    a=a+2;
-    printf("%d", a);
+    int a=1, b=5, c=10;
+    a=++a;
+    b=b++;
+    c=a*b+c;
+    printf("%d %d %d", a, b, c);
 
     printf("\n");
     return;
@@ -269,16 +184,11 @@ void P17()
 
 void P18()
 {
-    int a=1;
-    printf("%d ", a);
-    a=a*2;
-    printf("%d ", a);
-    a=a*2;
-    printf("%d ", a);
-    a=a*2;
-    printf("%d ", a);
-    a=a*2;
-    printf("%d", a);
+    int n=10, k=5;
+    k++;
+    n=k++;
+    n=n*k++;
+    printf("%d %d", n, k);
 
     printf("\n");
     return;
@@ -286,16 +196,10 @@ void P18()
 
 void P19()
 {
-    int a=1;
-    a=a*2;
-    a=a+1;
-    a=a*2;
-    a=a+1;
-    a=a*2;
-    a=a+1;
-    a=a*2;
-    a=a+1;
-    printf("%d", a);
+    int i=0;
+    int a[3]={4, 5, 6};
+    a[i++]=i;
+    printf("%d %d", a[0], a[1]);
 
     printf("\n");
     return;
@@ -303,13 +207,11 @@ void P19()
 
 void P20()
 {
-    int a=64;
-    a=a+1;
-    printf("%c ", a);
-    a=a+1;
-    printf("%c ", a);
-    a=a+1;
-    printf("%c", a);
+    int i=0;
+    int a[5]={5, 4, 3, 2, 1};
+    printf("%d ", a[i++]);
+    printf("%d ", a[i*2]);
+    printf("%d", a[--i]);
 
     printf("\n");
     return;
