@@ -46,6 +46,7 @@ void P5()
     int a=13;
     int b=5;
     printf("%d %d %d %d", a&b, a|b, a^b, ~a);
+    printf("%d %d %d %d", a<<2, a>>2, b<<3, b>>3);
 
     printf("\n");
     return;
