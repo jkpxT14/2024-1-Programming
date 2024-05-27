@@ -6,7 +6,7 @@ void P1()
         printf("%d ", i);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -16,7 +16,7 @@ void P2()
         printf("*");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -26,7 +26,7 @@ void P3()
         printf("Hi ");
     }
     
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -36,12 +36,11 @@ void P4()
         printf("%d ", 5-i);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
-// [Study]
-void P5()
+void P5() // [Study]
 {
     int n;
     for(n=0; n<10; n++){
@@ -49,7 +48,7 @@ void P5()
     }
     printf("%d", n);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -61,7 +60,7 @@ void P6()
     }
     printf("%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -73,7 +72,7 @@ void P7()
     }
     printf("%d", cnt);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -82,10 +81,10 @@ void P8()
     int s=10;
     for(int a=0; a<3; a++){
         s++;
-        printf("%d ", a);
+        printf("%d ", s);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -95,7 +94,7 @@ void P9()
         printf("%d ", i);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -105,7 +104,7 @@ void P10()
         printf("%d ", i);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -115,7 +114,7 @@ void P11()
         printf("%d ", a);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -125,7 +124,7 @@ void P12()
         printf("%d ", a);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -137,7 +136,7 @@ void P13()
         a--;
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -149,7 +148,7 @@ void P14()
         printf("%d ", a);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -161,7 +160,7 @@ void P15()
         printf("%d ", a);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -173,7 +172,7 @@ void P16()
         a+=2;
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -182,10 +181,10 @@ void P17()
     int n=1;
     while(n<50){
         n*=2;
-        pritnf("%d ", n);
+        printf("%d ", n);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -197,7 +196,7 @@ void P18()
         n*=2;
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -209,7 +208,7 @@ void P19()
     }
     printf("%d", s);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -222,7 +221,7 @@ void P20()
     }
     printf("%d", s);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 

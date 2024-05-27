@@ -102,7 +102,7 @@ void P10()
     return;
 }
 
-void P11()
+void P11() // [Caution]
 {
     int c=11;
     printf("%d ", --c+2);
@@ -170,7 +170,7 @@ void P16()
     return;
 }
 
-void P17()
+void P17() // [Question]
 {
     int a=1, b=5, c=10;
     a=++a;
@@ -194,7 +194,7 @@ void P18()
     return;
 }
 
-void P19()
+void P19() // [Question]
 {
     int i=0;
     int a[3]={4, 5, 6};
@@ -219,10 +219,6 @@ void P20()
 
 int main()
 {
-    P01();
-    P02();
-    P03();
-    P04();
     P1();
     P2();
     P3();

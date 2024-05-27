@@ -12,7 +12,7 @@ void P01()
         printf("작다");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -30,7 +30,7 @@ void P02()
     }
     printf("끝!");
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -41,7 +41,7 @@ void P1()
         printf("big");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -55,7 +55,7 @@ void P2()
         printf("small");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -69,7 +69,7 @@ void P3()
         printf("minus");
     }
     
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -80,7 +80,7 @@ void P4()
         printf("answer");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -91,7 +91,7 @@ void P5()
         printf("홀수");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -102,7 +102,7 @@ void P6()
         printf("짝수");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -116,7 +116,7 @@ void P7()
         printf("짝수");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -131,7 +131,7 @@ void P8()
     }
     printf("end");
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -145,7 +145,7 @@ void P9()
         printf("7의 배수 아님");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -159,7 +159,7 @@ void P10()
         printf("%d", b);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -175,7 +175,7 @@ void P11()
         printf("%d", d-1);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -190,7 +190,7 @@ void P12()
         printf("big");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -204,7 +204,7 @@ void P13()
         printf("wrong");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -219,7 +219,7 @@ void P14()
         printf("%d", n-1);
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -236,7 +236,7 @@ void P15()
         printf("C");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -253,12 +253,11 @@ void P16()
         printf("E");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
-// [Re]
-void P17()
+void P17() // [Caution]
 {
     int n=100;
     if(n<=1000){
@@ -271,7 +270,7 @@ void P17()
         printf("ETC");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -288,7 +287,7 @@ void P18()
         printf("big");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -303,7 +302,7 @@ void P19()
         printf("X");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -320,7 +319,7 @@ void P20()
         printf("같음");
     }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 

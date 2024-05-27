@@ -2,8 +2,6 @@
 
 int main()
 {
-    char a, b;
-    a='t';
-    b='t';
-    printf("%c %c", a, b);
+    int n=1/3;
+    printf("%d", n);
 }

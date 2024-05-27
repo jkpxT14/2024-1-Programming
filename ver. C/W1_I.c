@@ -4,7 +4,7 @@ void P1()
 {
     printf("나도 이제\nC마스터");
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -15,7 +15,7 @@ void P2()
     printf("%d\n", a);
     printf("%d\n", a*2);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -26,7 +26,7 @@ void P3()
     scanf("%d", &c); // 21 입력
     printf("%d %d %d", a, b, c);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -36,7 +36,7 @@ void P4()
     a=a*10;
     printf("정답은\n%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -46,7 +46,7 @@ void P5()
     float b=3.14;
     printf("%d %f", a, b);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -55,7 +55,7 @@ void P6()
     float a=3.14;
     printf("%.4f", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -65,7 +65,7 @@ void P7()
     float b=6.678910;
     printf("%.2f %.3f", a, b);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -74,7 +74,7 @@ void P8()
     float c=0.9624;
     printf("%.1f", c);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -87,7 +87,7 @@ void P9()
     printf("%d ", a);
     printf("%f", b);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -97,11 +97,11 @@ void P10()
     scanf("%d", &b); // 100 입력
     printf("점수는 %c, %d점", a, b);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
-void P11() // [Study]
+void P11()
 {
     int a=30, b=10, temp;
     printf("%d %d\n", a, b);
@@ -110,7 +110,7 @@ void P11() // [Study]
     b=temp;
     printf("%d %d", a, b);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -118,7 +118,7 @@ void P12()
 {
     printf("\\ \" \'");
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -128,7 +128,7 @@ void P13()
     scanf("%c", &a); // A 입력
     printf("%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -138,7 +138,7 @@ void P14()
     scanf("%d", &n); // 66 입력
     printf("%c", n);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -148,7 +148,7 @@ void P15()
     scanf("%c", &a); // E 입력
     printf("%c", a+32);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -160,7 +160,7 @@ void P16()
     a+=10;
     printf("%d %c", a, a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -169,7 +169,7 @@ void P17()
     int a=11;
     printf("%x", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -178,7 +178,7 @@ void P18()
     int a=10;
     printf("%o", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -187,7 +187,7 @@ void P19()
     int a=13;
     printf("%X", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -196,7 +196,7 @@ void P20()
     int a=13;
     printf("%X", a-3);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 

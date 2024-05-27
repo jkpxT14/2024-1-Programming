@@ -200,7 +200,7 @@ void P15()
 void P16()
 {
     int n, sum=10;
-    scanf("%d", &n);
+    scanf("%d", &n); // 20 입력
     for(int i=1; i<=n; i++){
         if(i%5==0){
             sum--;

@@ -8,7 +8,7 @@ void P01()
     a=1;
     printf("%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -20,7 +20,7 @@ void P02()
     c='Q';
     printf("%c", c);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -32,7 +32,7 @@ void P03()
     a=b+c;
     printf("%d", a);
     
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -44,7 +44,7 @@ void P04()
     a=a+a; // a+=a; a*=2;
     printf("%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -55,7 +55,7 @@ void P1()
     a=2;
     printf("%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -65,7 +65,7 @@ void P2()
     a=a+a; // a+=a; a*=2;
     printf("%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -76,7 +76,7 @@ void P3()
     b=15;
     printf("%d", a+b);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -86,7 +86,7 @@ void P4()
     a=a*a;
     printf("%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -98,7 +98,7 @@ void P5()
     b=10;
     printf("%d", a+b);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -110,7 +110,7 @@ void P6()
     sum=a+b;
     printf("%d", sum);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -123,7 +123,7 @@ void P7()
     b=a+b;
     printf("%d %d", a, b);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -133,7 +133,7 @@ void P8()
     a=a+1;
     printf("%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -145,17 +145,17 @@ void P9()
     c=a+b;
     printf("%d %d %d", a, b, c);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
 void P10()
 {
     int a=10;
-    printf("%d", a+a);
+    printf("%d ", a+a);
     printf("%d", a/2);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -172,7 +172,7 @@ void P11()
     //     printf("%d ", a[i]);
     // }
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -191,7 +191,7 @@ void P12()
     // }
     // printf("%d", n);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -206,7 +206,7 @@ void P13()
     c=b*c;
     printf("%d %d %d", a, b, c);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -217,7 +217,7 @@ void P14()
     a[i]=i;
     printf("%d %d", a[0], a[1]);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -228,7 +228,7 @@ void P15()
     i=i*2;
     printf("%d", a[i]*2);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -246,7 +246,7 @@ void P16()
     i=i*2;
     printf("%d", a[i]);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -263,7 +263,7 @@ void P17()
     a=a+2;
     printf("%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -278,9 +278,9 @@ void P18()
     a=a*2;
     printf("%d ", a);
     a=a*2;
-    printf("%d", a);
+    // printf("%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -297,7 +297,7 @@ void P19()
     a=a+1;
     printf("%d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -311,7 +311,7 @@ void P20()
     a=a+1;
     printf("%c", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
