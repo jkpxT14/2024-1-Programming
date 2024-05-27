@@ -2,9 +2,8 @@
 
 void P1()
 {
-    int a=4;
-    if(a==4){
-        printf("네잎클로버");
+    for(int i=1; i<=5; i++){
+        printf("%d ", i);
     }
 
     printf("\n");
@@ -13,12 +12,11 @@ void P1()
 
 void P2()
 {
-    int a;
-    printf("대여기간을 입력하세요 : ");
-    scanf("%d", &a); // 입력 9
-    if(a>7){
-        printf("%d\n", a);
-        printf("일주일 뒤");
+    int num;
+    printf("숫자를 입력하세요 : ");
+    scanf("%d", &num);
+    for(int i=1; i<=num; i++){
+        printf("%d ", i);
     }
 
     printf("\n");
@@ -27,12 +25,10 @@ void P2()
 
 void P3()
 {
-    int a=3, b=1;
-    if(a>=b){
-        printf("%d", a);
-    }
-    else{
-        printf("%d", b);
+    printf("구구단 출력\n");
+
+    for(int i=1; i<10; i++){
+        printf("2 * %d = %d\n", i, 2*i);
     }
 
     printf("\n");
@@ -41,14 +37,13 @@ void P3()
 
 void P4()
 {
-    int score;
-    printf("점수를 입력하세요 : "); // 입력 82
-    scanf("%d", &score);
-    if(score>=70){
-        printf("합격");
-    }
-    else{
-        printf("불합격");
+    int num;
+    printf("출력하고 싶은 단수를 입력하세요 : ");
+    scanf("%d", &num);
+    printf("%d단 출력\n", num);
+
+    for(int i=1; i<10; i++){
+        printf("%d * %d = %d\n", num, i, num*i);
     }
 
     printf("\n");
@@ -57,65 +52,50 @@ void P4()
 
 void P5()
 {
-    int a=6, b=2;
-    if(a>b){
-        printf("a가 큼");
-    }
-    else if(a==b){
-        printf("a와 b가 같음");
-    }
-    else{
-        printf("b가 큼");
+    int a=1;
+    while(a<6){
+        printf("%d ", a);
+        a++;
     }
 
     printf("\n");
     return;
 }
 
-// [Study]
 void P6()
 {
-    int score;
-    char grade;
-    printf("점수를 입력하세요 : ");
-    scanf("%d", &score);
-    switch(score){
-        case 10:
-        case 9:
-            grade='A';
-            break;
-        case 8:
-            grade='B';
-            break;
-        case 7:
-            grade='C';
-            break;
-        case 6:
-            grade='D';
-            break;
-        default:
-            grade='F';
+    int a=1, sum=0;
+    while(a!=0){
+        printf("값을 입력하세요 : ");
+        scanf("%d", &a);
+        sum+=a;
     }
-    printf("점수는 %d점으로 학점은 %c입니다.", score, grade);
+    printf("총 %d입니다.", sum);
 
     printf("\n");
     return;
 }
 
-// [Incomplete]
 void P7()
 {
-    getchar(); // [Important]
-    char alp;
-    printf("영문자를 입력하세요 : ");
-    scanf("%c", &alp);
-    switch(alp){
-        case 'a':
-        case 'A':
-            printf("에이");
-            break;
-        default:
-            printf("영문자가 아닙니다.");
+    int a=1;
+    do{
+        printf("%d ", a);
+        a++;
+    } while(a<6);
+
+    printf("\n");
+    return;
+}
+
+void P8()
+{
+    for(int i=1; i<=9; i++){
+        printf("%d단\n------------\n", i);
+        for(int j=1; j<=9; j++){
+            printf("%d * %d = %2d\n", i, j, i*j);
+        }
+        printf("\n");
     }
 
     printf("\n");
@@ -131,5 +111,6 @@ int main()
     P5();
     P6();
     P7();
+    P8();
     return 0;
 }

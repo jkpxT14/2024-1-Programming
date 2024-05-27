@@ -1,26 +1,30 @@
 #include <stdio.h>
 
-void P1() // 변수의 할당
+void P1() // 변수의 할당, Swap
 {
     int a=1, b=2;
     int temp;
-
     temp=a;
     a=b;
+    b=temp;
+    printf("%d %d %d", a, b, temp);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
 void P2() // 변수의 할당
 {
     int a=1, b=2;
-    a=a+b;
+    a=a+b; // a+=b;
     b=a-b;
+    printf("%d %d", a, b);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
+
+// [For Your Information, FYI] sizeof
 
 void P3() // putchar()
 {
@@ -28,7 +32,7 @@ void P3() // putchar()
     putchar(c);
     putchar(66);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -37,7 +41,7 @@ void P4() // puts()
     puts("hello");
     puts("world");
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -46,7 +50,7 @@ void P5() // printf()
     printf("hello");
     printf("world");
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -55,17 +59,16 @@ void P6() // printf()
     printf("hello \n");
     printf("world");
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
 void P7() // printf()
 {
-    // printf(" 이름: 김영상\n");
     printf(" 이름: %s\n", "김영상");
     printf(" 나이: %d살", 17);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -74,7 +77,7 @@ void P8() // printf()
     int a=5;
     printf("a의 값은 %d", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -83,7 +86,7 @@ void P9() // printf()
     printf("%s \t", "Good");
     printf("%s", "bye!");
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -93,7 +96,7 @@ void P10() // printf()
     printf("몸무게: %f \n", a);
     printf("몸무게: %.2f", a);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -102,17 +105,18 @@ void P11() // getchar()
     char c=getchar();
     putchar(c);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
 void P12() // gets()
 {
+    getchar();
     char s[100];
     gets(s);
     puts(s);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -121,10 +125,14 @@ void P13()
     char c1, c2[100];
     c1=getchar(); // [Caution] getchar(c1);
     putchar(c1);
+
+    getchar();
+    printf("\n");
+
     gets(c2);
     puts(c2);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -135,7 +143,7 @@ void P14() // scanf()
     scanf("%d %d", &a, &b);
     printf("입력한 수는 %d와 %d입니다.", a, b);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -146,7 +154,7 @@ void P15() // scanf()
     scanf("%d %d", &a, &b);
     printf("두 수의 합은 %d입니다.", a+b);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -157,18 +165,19 @@ void P16() // scanf()
     scanf("%d %d", &height, &weight);
     printf("키는 %dcm이고 몸무게는 %dkg입니다.", height, weight);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
 void P17() // scanf()
 {
+    getchar();
     char c;
     printf("좋아하는 알파벳을 입력하세요 : ");
     c=getchar();
-    printf("당신은 %s를 좋아하는군요.", c);
+    printf("당신은 %c를 좋아하는군요.", c);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
@@ -190,7 +199,7 @@ void P18_Correct() // scanf()
     scanf("%d %d", &i, &j);
     printf("입력한 수는 %d, %d이고 두 수의 합은 %d이다.", i, j, i+j);
 
-    printf("\n");
+    printf("\n------------\n");
     return;
 }
 
